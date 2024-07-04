@@ -18,9 +18,34 @@ const StartBackground = (props: Props) => {
     })
     return (
     <group rotation={[0, 0, Math.PI / 4]}>
-        
+        <Points
+            ref={ref}
+            positions={sphere}
+            stride={3}
+            frustumCulled
+            {...props}
+        >
+            <PointMaterial
+                transparent
+                color='#FFF'
+                size={0.002}
+                sizeAttenuation={true}
+                dethWrite={false}
+            />
+        </Points>
     </group>
   )
 }
 
-export default StartBackground
+
+const StartCanvas = () => (
+    <div className='w-full h-auto fixed inset-0 z-[20]'>
+        <Canvas camera={{position : [0, 0, 1]}}>
+            <Suspense fallback={null}>
+                <StartBackground/>
+            </Suspense>
+        </Canvas>
+    </div>
+)
+
+export default StartCanvas
