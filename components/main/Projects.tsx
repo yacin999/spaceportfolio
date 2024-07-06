@@ -10,19 +10,19 @@ const Projects = (props: Props) => {
 
         <div className='h-full w-full flex flex-col md:flex-row gap-10 px-10'>
             <ProjectCard
-                src='NextWebsite.png'
+                src='/NextWebsite.png'
                 title='Modern next js Portfolio'
                 description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla veritatis illum illo ut consequatur, libero, consequuntur provident tempora doloremque, iure odit quas eius! In autem perferendis eum! Esse, voluptatibus sapiente?'
             />
 
             <ProjectCard
-                src='CardImage.png'
+                src='/CardImage.png'
                 title='Interactive Website Cards'
                 description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla veritatis illum illo ut consequatur, libero, consequuntur provident tempora doloremque, iure odit quas eius! In autem perferendis eum! Esse, voluptatibus sapiente?'
             />
 
             <ProjectCard
-                src='SpaceWebsite.png'
+                src='/SpaceWebsite.png'
                 title='Space Themed Website'
                 description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla veritatis illum illo ut consequatur, libero, consequuntur provident tempora doloremque, iure odit quas eius! In autem perferendis eum! Esse, voluptatibus sapiente?'
             />
