@@ -53,7 +53,7 @@ const HeroContent = (props: Props) => {
         >
             <Image
                 src='/mainIconsdark.svg'
-                alt="work icons"
+                alt="work  icons"
                 height={650}
                 width={650}
             />
